@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>variables</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            const pi = 3.14;
+            let person = "John Doe";
+            let y = 9; 
+            var x = 5;
+            {
+                person = "Ugyen";
+                let y = 10; //Redeclaring a variable inside a block will not redeclare the variable outside the block
+                var x = 6;  //Redeclaring a variable inside a block will also redeclare the variable outside the block
+            }
+
+            document.getElementById("demo").innerHTML =
+            pi + "<br>" + person + "<br>" + y + "<br>" + x;
+        </script>    
+    </body>
+</html>
